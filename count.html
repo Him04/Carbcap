@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Emission Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #calculator {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 300px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    h2 {
+      color: #000000;
+    }
+
+    input {
+      width: 80%;
+      padding: 8px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  #heading 
+  {
+    background-color: #45a049;
+    margin: 0;
+    padding: 0;
+  }
+    
+
+    h1, h2, input, button {
+      animation: fadeIn 1s ease;
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <h1 id="heading">CALCULATE CARBCAP</h1>
+    <h2><b><i>CHECK CARBON FOOTPRINTS OF YOUR PRODUCT</i></b></h2>
+    <label for="productName">Product Name</label>
+    <input type="text" id="productName" placeholder="Enter product name">
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" placeholder="Enter quantity">
+
+    <label for="unit">Unit (optional)</label>
+    <input type="text" id="unit" placeholder="e.g., ml, kg, g, barrel">
+
+    <button onclick="calculateCarbonEmission()">Calculate</button>
+  </div>
+
+  <script>
+    function calculateCarbonEmission() {
+      // Add your calculation logic here
+      alert('Carbon emission calculation logic goes here');
+    }
+  </script>
+</body>
+</html>

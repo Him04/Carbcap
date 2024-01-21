@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARBCAP!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+     body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Adjust text color as needed */
+}
+
+</style>
+
+  
+
+
+</style>
+
+<body>
+    <div class="page-position">
+
+        <div class="menu-sizing background-white">
+            <div class="heading">
+                <img class="logo" src="logo_carbcap.jpeg" , alt="logo">
+                <h2>CARBCAP!</h2>
+            </div>
+
+            <div class="nav-bar-sizing colour-green-font ">
+                <ul>
+                    <li><b>Home</b></li>
+                    <li><b>Contact</b></li>
+                    <li><b>Donate</b></li>
+                    <li><b>About Us</b></li>
+                    <button class="register-button" id="trigger-modal" onclick="showModal()">Register</button>
+                  
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="body">
+            <img class=body-image" src="body-image.jpg" , alt="body-image">
+            <div class="message-impact colour-white-font">
+                <h1>HOW BIG IS YOUR <br> ENVIRONMENTAL IMPACT?</h1>
+                <p>The planet is in crisis - from climate change to the pollution <br> in our oceans and devastation of
+                    ourforests. It's up to all of <br> us to fix it. Take your first step by calculating your
+                    environmental <br>
+                    impact using this carbon footprint calculator.
+                </p>
+                <button class="body-register-button button-background>" id="trigger-modal" onclick="showModal()">
+                    Register</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+              <source src="CLIP.mp4" type="video/mp4">
+              <!-- Add additional source elements for other video formats if needed -->
+              Your browser does not support the video tag.
+            </video>
+            <div class="content">
+              <!-- Your other homepage content goes here -->
+              <h1>"Preserve Earth, Secure Tomorrow."</h1>
+              <p></p>
+            </div>
+          </div>
+
+        <div class="user-journey background-pastel-green">
+            <div class="user-journey-picture background-white">
+                <img src="journey.png">
+                <div class="custom-color card-sizing">
+                    <h1>Our Journey</h1>
+                    <div>Namaste 🙏🏻
+                        So, It all started with an startup incubation drive of 
+                        DTU(Delhi Technological University) 
+                        in which we secured the position of runner up, from that day of incubation we nourished the way of implementation and better 
+                        plan of action  learning from our competitor pre existing models on this problem, we also tried resolving those issues which were counted in the other models flaws, though our model and plan of action also consists of flaw which needs rectification and we're 
+                        constantly working on it.
+                        But on comparing it on ground basis our flaw ratio is 
+                        comparatively less than that of other existing models.
+                    </div>
+                    <button class="card-button">Read More</button>
+                </div>
+            </div>
+
+            <div class="user-journey-picture background-white">
+                <img src="calculator.png">
+                <div class="card-sizing custom-color">
+                    <h1>Calculator</h1>
+                    <div>This carbon footprint calculator allows users to calculate their carbon footprint and the
+                        effect
+                        they have on the environment. The aim is to increase awareness and provide the resources
+                        requried to help make the world a better place. In doing so help them make a change in their
+                        lifestyle to reduce the overall carbon footprint contribution.
+                    </div>
+                    <button class="card-button">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="displayDataArray"></div>
+
+
+
+        <div class="footer background-footer">
+            <div class="footer-heading colour-white-font">
+                <h1>Follow our socials</h1>
+            </div>
+
+            <div class="social-media background-footer">
+                <img src="facebook.png" , alt="facebook">
+                <img src="instagram.png" , alt="instagram">
+                <img src="linkedin.png" ,alt="linkedin">
+            </div>
+            <span class="background-footer colour-white-font"><a
+                    href="https://www.flaticon.com/search?word=calculator&order_by=4" title="flaticon-icons">Icons
+                    provided by Flaticon | Brendan Zhou </a></span>
+        </div>
+
+        <div class="register-form form-state" id="ct-form">
+            <div class="register-modal">
+                <div class="exit-button" onclick="closeModal()">&#10006</div>
+                <h2>Register for CARBCAP</h2>
+                <form>
+                    <div id="userDetails">
+                        <div>
+                            <h3>User Details</h3>
+                            <span class="userDetails-text">Given name: </span>
+                            <input class="userDetails-text" type="text" placeholder="Enter Your Given name..." />
+                            <br>
+                            <br>
+                            <span class="userDetails-text">Surname: </span>
+                            <input class="userDetails-text" type="text" placeholder="Enter Your Surname..." />
+                            <br>
+                            <br>
+                            <span class="userDetails-text">Username: </span>
+                            <input class="userDetails-text" type="text" placeholder="Enter Your Username..." />
+                            <br>
+                            <br>
+                            <span class="userDetails-text">Password: </span>
+                            <input class="userDetails-text" type="text" placeholder="Enter Your Passowrd..." />
+                        </div>
+                    </div>
+                    <div id="addresses">
+                        <div>
+                            <h3>Addresses</h3>
+                            <span class="addressDetails-text">Home Address: </span>
+                            <input class="addressDetails-text" type="text" placeholder="Enter Your Home Address..." />
+                            <br>
+                            <br>
+                            <span class="addressDetails-text">Work Address: </span>
+                            <input class="addressDetails-text" type="text" placeholder="Enter Your Work Address..." />
+                        </div>
+                    </div>
+                    <div id="contacts">
+                        <div>
+                            <h3>Contacts</h3>
+                            <span class="contactDetails-text">Mobile Number: </span>
+                            <input class="contactDetails-text" type="text" placeholder="Enter Your Mobile Number..." />
+                            <br>
+                            <br>
+                            <span class="contactDetails-text">Email: </span>
+                            <input class="contactDetails-text" type="text" placeholder="Enter Your Email..." />
+                            <br>
+                        </div>
+                    </div>
+                    <div class="submit-modal">
+                        <button class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+<style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Adjust text color as needed */
+}
+
+</style>
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop id="background-video">
+      <source src="your-video.mp4" type="video/mp4">
+      <!-- Add additional source elements for other video formats if needed -->
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <!-- Your other homepage content goes here -->
+      <h1>Welcome to Your Website</h1>
+      <p>This is your homepage content.</p>
+    </div>
+  </div>
+</body>
+</html>

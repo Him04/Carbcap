@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+  <style>
+    body{
+      background-color: rgb(178, 185, 178);
+      margin: 0;
+      padding: 0;
+    }
+    #myChart{
+      align-items: center;
+    }
+    .navbar {
+      background-color: #228B22;; /* Dark background color */
+      color: #fff; /* White text color */
+      padding: 10px;
+      text-align: center;
+      border-bottom: 5px solid #228B22; /* Green border */
+    }
+
+    h1 {
+      margin: 0;
+    }
+    
+  </style>
+
+  <div class="navbar">
+    <h1>Market Value</h1>
+  </div>
+
+<canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
+
+<script>
+const xValues = ["2018", "2022", "2024", "2031","2040"];
+const yValues = ["3", "10","20","30","40","50"];
+const barColors = ["red", "red", "green", "lightgreen", "darkgreen","darkgreen"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Market Size after using CARBCAP"
+    }
+  }
+});
+</script>
+
+</body>
+</html>
