@@ -1,2 +1,3 @@
 # Carbcap
-Our system seamlessly integrates with existing business processes and systems, making it easy for businesses to adopt with low acquisition cost and  implement.
+Carbon emissions, contribute to the greenhouse effect, leading to global warming and climate change. This results in rising more frequent extreme events.
+
